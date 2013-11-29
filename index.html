@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>Descent Character Guide</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<link rel="stylesheet" href="themes/descent.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="script/main.js"></script>
+<link href="style/main.css" rel="stylesheet">
+</head>
+<body>
+<div data-role="page" data-theme="a" id="home">
+	<div data-role="content">
+		<img alt="Descent Character Guide" src="image/logo.png">
+		<ul data-inset="true" data-role="listview" id="nav_main">
+			<li><a href="#heroes">Heroes</a></li>
+			<li><a href="#bestiary">Bestiary</a></li>
+		</ul>
+	</div>
+</div>
+
+<div data-role="page" data-theme="a" id="loading">
+</div>
+
+<div data-role="page" data-theme="a" id="heroes">
+	<div data-role="header">
+		<a class="btn_header" data-rel="back" href="#">Back</a>
+		<h1>Heroes</h1>
+	</div>
+	<div data-role="content">
+		<select id="hero_select">
+		</select>
+
+		<div class="biography">
+			<img alt="hero_image" id="hero_image" src="image/hero_grisban.png">
+			<p id="hero_bio"></p>
+		</div>
+
+		<div class="grid_stats">
+			<h3>Primary</h3>
+			<div class="ui-grid-c">
+				<div class="ui-block-a"><img alt="health" src="image/icon_health.png"></div>
+				<div class="ui-block-b"><img alt="speed" src="image/icon_speed.png"></div>
+				<div class="ui-block-c"><img alt="stamina" src="image/icon_stamina.png"></div>
+				<div class="ui-block-d"><img alt="defense" src="image/icon_defense.png"></div>
+				<div id="hero_health" class="ui-block-a"></div>
+				<div id="hero_speed" class="ui-block-b"></div>
+				<div id="hero_stamina" class="ui-block-b"></div>
+				<div id="hero_defense" class="ui-block-b"></div>
+			</div>
+		</div>
+
+		<div class="grid_stats">
+			<h3>Secondary</h3>
+			<div class="ui-grid-c">
+				<div class="ui-block-a"><img alt="might" src="image/icon_might.png"></div>
+				<div class="ui-block-b"><img alt="knowledge" src="image/icon_knowledge.png"></div>
+				<div class="ui-block-c"><img alt="willpower" src="image/icon_anus.png"></div>
+				<div class="ui-block-d"><img alt="awareness" src="image/icon_awareness.png"></div>
+				<div id="hero_might" class="ui-block-a"></div>
+				<div id="hero_knowledge" class="ui-block-b"></div>
+				<div id="hero_willpower" class="ui-block-c"></div>
+				<div id="hero_awareness" class="ui-block-d"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" data-theme="a" id="bestiary">
+	<div data-role="header">
+		<a class="btn_header" data-rel="back" href="#">Back</a>
+		<h1>Bestiary</h1>
+	</div>
+	<div data-role="content">
+		<select id="mob_select">
+		</select>
+
+		<div class="biography">
+			<img alt="mob_image" id="mob_image" src="image/mob_ferrox.png">
+			<p id="mob_bio"></p>
+		</div>
+
+		<div class="grid_stats">
+			<h3>Minion</h3>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img alt="health" src="image/icon_health.png"></div>
+				<div class="ui-block-b"><img alt="speed" src="image/icon_speed.png"></div>
+				<div class="ui-block-c"><img alt="defense" src="image/icon_defense.png"></div>
+				<div id="mob_health" class="ui-block-a"></div>
+				<div id="mob_speed" class="ui-block-b"></div>
+				<div id="mob_defense" class="ui-block-c"></div>
+			</div>
+		</div>
+
+		<div class="grid_stats">
+			<h3>Master</h3>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img alt="health" src="image/icon_health.png"></div>
+				<div class="ui-block-b"><img alt="speed" src="image/icon_speed.png"></div>
+				<div class="ui-block-c"><img alt="defense" src="image/icon_defense.png"></div>
+				<div id="mob_m_health" class="ui-block-a"></div>
+				<div id="mob_m_speed" class="ui-block-b"></div>
+				<div id="mob_m_defense" class="ui-block-c"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
